@@ -2,9 +2,6 @@
 :computer: **PROJETO INSERT YOUR MED**
 </h1>
 
-<h2 align="center" style="color:black"> Layout da Interface
-<h2>
-
 <h5 align="center">
 <p style="color:black">ÍNDICE</p></h5>
 
