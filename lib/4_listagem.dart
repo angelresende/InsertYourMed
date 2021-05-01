@@ -9,7 +9,6 @@ class PaginaLista extends StatefulWidget {
 }
 
 class _ListPaginaListaState extends State<PaginaLista> {
-  
   var medicamentos = [];
   var txtmedicamentos = TextEditingController();
 
@@ -27,18 +26,28 @@ class _ListPaginaListaState extends State<PaginaLista> {
         backgroundColor: Color(0xFF8FAADC),
         //desabilitar o botão de voltar no AppBar
         automaticallyImplyLeading: false,
-    ),
-    backgroundColor: Color(0xFF8FAADC),
-    body: Container(
-       padding: EdgeInsets.all(40),
+      ),
+      backgroundColor: Color(0xFF8FAADC),
+      body: Container(
+        padding: EdgeInsets.all(40),
         child: Column(
           children: [
+            Container(
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(30),
+                child: Center(
+                    child: Text("Olá Maria insira sua lista de medicamentos...",
+                        style:
+                            TextStyle(fontSize: 18, color: Colors.grey[50])))),
             Row(
               children: [
                 Expanded(
                   child: TextField(
                     controller: txtmedicamentos,
-                    style: TextStyle(fontSize: 14, fontStyle: FontStyle.italic, color: Colors.grey[50]),
+                    style: TextStyle(
+                        fontSize: 14,
+                        fontStyle: FontStyle.italic,
+                        color: Colors.grey[50]),
                     decoration: InputDecoration(
                       labelText: 'Adicione seu medicamento',
                     ),
@@ -52,7 +61,8 @@ class _ListPaginaListaState extends State<PaginaLista> {
                         medicamentos.add(txtmedicamentos.text);
                         txtmedicamentos.clear();
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: Text('Medicamento adicionado a lista com sucesso!'),
+                          content: Text(
+                              'Medicamento adicionado a lista com sucesso!'),
                           duration: Duration(seconds: 3),
                         ));
                       } else {
@@ -74,7 +84,10 @@ class _ListPaginaListaState extends State<PaginaLista> {
                   return ListTile(
                     title: Text(
                       medicamentos[index],
-                      style: TextStyle(fontSize: 14, fontStyle: FontStyle.italic, color: Colors.grey[50]),
+                      style: TextStyle(
+                          fontSize: 14,
+                          fontStyle: FontStyle.italic,
+                          color: Colors.grey[50]),
                     ),
                     trailing: IconButton(
                       icon: Icon(Icons.delete),
@@ -95,7 +108,7 @@ class _ListPaginaListaState extends State<PaginaLista> {
                 //Aparência do divisor
                 separatorBuilder: (context, index) {
                   return Divider(
-                    color: Colors.blue[100],
+                    color: Colors.blue[900],
                     thickness: 1,
                   );
                 },
