@@ -5,8 +5,6 @@
 <h2 align="center" style="color:black"> Layout da Interface
 <h2>
 
-//inserir o link do layout do app
-
 <h5 align="center">
 <p style="color:black">ÍNDICE</p></h5>
 
