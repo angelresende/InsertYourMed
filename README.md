@@ -69,7 +69,7 @@
 Para o desenvolvimento do projeto a princípio, foi elaborado a prototipação no Excel:
 
 <h2 align="center">
-<img alt="layout" src= "https://github.com/angelresende/InsertYourMed/blob/master/Layout.PNG" width="600px">
+<img alt="layout" src= "https://github.com/angelresende/InsertYourMed/blob/main/Layout.PNG" width="600px">
 </h2>
 
 
